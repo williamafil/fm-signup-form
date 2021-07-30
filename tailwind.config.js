@@ -30,6 +30,7 @@ module.exports = {
       pink: colors.pink,
       cpink: "#FF7979",
       cgreen: "#38CC8B",
+      clightGreen: "#77E2B3",
       cpurple: "#5E54A4",
       cblack: "#3D3B48",
     },

@@ -4,3 +4,7 @@ body {
   font-family: 'Poppins', sans-serif;
   @apply bg-cpink text-white;
 }
+
+.border-alert {
+  @apply border-red-400;
+}
