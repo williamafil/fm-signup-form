@@ -176,6 +176,8 @@ module.exports = {
       "2xl": "0 25px 50px -12px rgba(0, 0, 0, 0.25)",
       inner: "inset 0 2px 4px 0 rgba(0, 0, 0, 0.06)",
       none: "none",
+      btn: "inset 0px -4px 0px rgba(0,0,0,0.0908818)",
+      div: "0px 8px 0px rgba(0,0,0,0.14688)",
     },
     caretColor: (theme) => theme("colors"),
     contrast: {
