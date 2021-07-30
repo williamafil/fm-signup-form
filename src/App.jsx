@@ -1,59 +1,21 @@
-import React, { useState } from 'react'
-import logo from './logo.svg'
-import './App.css'
+import React from "react";
+
+import "./App.css";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <div className="text-center">
-      <header className="bg-[#282c34] min-h-screen text-white flex flex-col justify-center items-center">
-        <img
-          src={logo}
-          className="h-60 motion-safe:animate-spin animate-speed"
-          alt="logo"
-        />
-        <style>
-          {"\
-            .animate-speed{\
-              animation-duration:20s;\
-            }\
-          "}
-        </style>
-        <p className="text-3xl font-bold">Hello Vite + React!</p>
-        <p className="mt-3">
-          <button
-            type="button"
-            className="rounded text-[#282C34] bg-gray-300 px-2 py-2 my-6 hover:bg-gray-200 transition-all"
-            onClick={() => setCount((count) => count + 1)}>
-            count is: {count}
-          </button>
-        </p>
+    <div className="container mx-auto h-screen w-screen flex flex-col bg-pattern-mobile sm:flex-row">
+      <section className="hero">
+        <h1 className="text-5xl font-bold">Learn to code by watching others</h1>
         <p>
-          Edit <code className="text-[#8d96a7]">App.jsx</code> and save to test HMR updates.
+          See how experienced developers solve problems in real-time. Watching
+          scripted tutorials is great, but understanding how developers think is
+          invaluable.
         </p>
-        <p className="mt-3 flex gap-4 text-center text-[#8d96a7]">
-          <a
-            className="text-[#61dafb] hover:text-blue-400 transition-all"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-          {' | '}
-          <a
-            className="text-[#61dafb] hover:text-blue-400 transition-all"
-            href="https://vitejs.dev/guide/features.html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Vite Docs
-          </a>
-        </p>
-      </header>
+      </section>
+      <main className="">form</main>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
