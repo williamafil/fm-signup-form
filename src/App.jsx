@@ -12,7 +12,7 @@ function App() {
       </section>
 
       <main className="p-6 md:w-7/12 lg:w-6/12">
-        <div className="mb-6 rounded-lg shadow-div bg-cpurple py-6 px-14 text-center text-2xl">
+        <div className="mb-6 rounded-lg shadow-div bg-blue py-6 px-14 text-center text-2xl">
           <CallToAction />
         </div>
 

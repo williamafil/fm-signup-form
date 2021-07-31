@@ -46,11 +46,11 @@ const SignupForm = () => {
               type="text"
               id="firstName"
               name="firstName"
-              className="w-full text-sm text-gray-600 font-semibold rounded-md py-4 pl-5 border border-gray-300 focus:outline-none focus:ring-1 focus:ring-gray-500 focus:border-transparent"
+              className="w-full text-sm text-blue-dark font-semibold rounded-md py-4 pl-5 border border-blue-grayish focus:outline-none focus:ring-1 focus:ring-blue-dark focus:border-transparent"
               placeholder="First Name"
               onChange={(e) => updateFormData(e)}
             />
-            <p className="absolute -bottom-9 right-1 text-cpink italic text-xs hidden">
+            <p className="absolute -bottom-9 right-1 text-red italic text-xs hidden">
               First Name cannot be empty
             </p>
           </label>
@@ -63,7 +63,7 @@ const SignupForm = () => {
               type="text"
               id="lastName"
               name="lastName"
-              className="w-full text-sm text-gray-600 font-semibold rounded-md py-4 pl-5 border border-gray-300 focus:outline-none focus:ring-1 focus:ring-gray-500 focus:border-transparent"
+              className="w-full text-sm text-blue-dark font-semibold rounded-md py-4 pl-5 border border-blue-grayish focus:outline-none focus:ring-1 focus:ring-blue-dark focus:border-transparent"
               placeholder="Last Name"
               onChange={(e) => updateFormData(e)}
             />
@@ -80,7 +80,7 @@ const SignupForm = () => {
               type="email"
               id="email"
               name="email"
-              className="w-full text-sm text-gray-600 font-semibold rounded-md py-4 pl-5 border border-gray-300 focus:outline-none focus:ring-1 focus:ring-gray-500 focus:border-transparent"
+              className="w-full text-sm text-blue-dark font-semibold rounded-md py-4 pl-5 border border-blue-grayish focus:outline-none focus:ring-1 focus:ring-blue-dark focus:border-transparent"
               placeholder="Email Address"
               onChange={(e) => updateFormData(e)}
             />
@@ -97,7 +97,7 @@ const SignupForm = () => {
               type="password"
               id="password"
               name="password"
-              className="w-full text-sm text-gray-600 font-semibold rounded-md py-4 pl-5 border border-gray-300 focus:outline-none focus:ring-1 focus:ring-gray-500 focus:border-transparent"
+              className="w-full text-sm text-blue-dark font-semibold rounded-md py-4 pl-5 border border-blue-grayish focus:outline-none focus:ring-1 focus:ring-blue-dark focus:border-transparent"
               placeholder="Password"
               onChange={(e) => updateFormData(e)}
             />
@@ -111,9 +111,9 @@ const SignupForm = () => {
           <BaseButton type="submit" text="claim your free trial" />
         </div>
       </form>
-      <p className="text-gray-400 text-xs text-center mt-3 px-4">
+      <p className="text-blue-grayish text-xs text-center mt-3 px-4">
         By clicking the button, you are agreeing to our{" "}
-        <span className="font-bold text-red-400">Terms and Services</span>
+        <span className="font-bold text-red">Terms and Services</span>
       </p>
     </>
   );
