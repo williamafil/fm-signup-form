@@ -62,9 +62,9 @@ function App() {
 
   return (
     <div className="container mx-auto h-screen w-screen flex flex-col md:flex-row md:items-center" style={{backgroundImage: `url(${getImageUrl('bg-intro-mobile')})`}}>
-      <section className="hero p-6 mt-20 md:w-5/12 lg:w-6/12">
-        <h1 className="text-center md:text-left text-3xl md:text-4xl lg:text-5xl font-bold mb-4">Learn to code by watching others</h1>
-        <p className="text-base text-center md:text-left leading-7">
+      <section className="p-6 mt-20 md:w-5/12 lg:w-6/12 text-center md:text-left">
+        <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">Learn to code by watching others</h1>
+        <p className="text-base leading-7">
           See how experienced developers solve problems in real-time. Watching
           scripted tutorials is great, but understanding how developers think is
           invaluable.
