@@ -12,6 +12,21 @@ const SignupForm = () => {
 
   const updateFormData = (e) => {
     console.log("e: ", e.target.name);
+    if (e.target.name === "email") {
+      const emailFormat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+      const inputField = e.target;
+      if (!e.target.value.match(emailFormat)) {
+        inputField.classList.add("border-alert");
+        inputField.previousElementSibling.classList.remove("hidden");
+        inputField.placeholder = "";
+        inputField.nextElementSibling.classList.remove("hidden");
+        return;
+      } else {
+        inputField.classList.remove("border-alert");
+        inputField.previousElementSibling.classList.add("hidden");
+        inputField.nextElementSibling.classList.add("hidden");
+      }
+    }
     setFormData({
       ...formData,
       [e.target.name]: e.target.value,
@@ -22,6 +37,7 @@ const SignupForm = () => {
     e.preventDefault();
 
     for (const property in formData) {
+      console.log(property);
       const inputField = e.target.querySelector(`#${property}`);
       if (formData[property] === "") {
         inputField.classList.add("border-alert");
@@ -67,7 +83,7 @@ const SignupForm = () => {
               placeholder="Last Name"
               onChange={(e) => updateFormData(e)}
             />
-            <p className="absolute -bottom-9 right-1 text-cpink italic text-xs hidden">
+            <p className="absolute -bottom-9 right-1 text-red italic text-xs hidden">
               Last Name cannot be empty
             </p>
           </label>
@@ -84,7 +100,7 @@ const SignupForm = () => {
               placeholder="Email Address"
               onChange={(e) => updateFormData(e)}
             />
-            <p className="absolute -bottom-9 right-1 text-red-400 italic text-xs hidden">
+            <p className="absolute -bottom-9 right-1 text-red italic text-xs hidden">
               Looks like this is not an email
             </p>
           </label>
@@ -101,7 +117,7 @@ const SignupForm = () => {
               placeholder="Password"
               onChange={(e) => updateFormData(e)}
             />
-            <p className="absolute -bottom-9 right-1 text-red-400 italic text-xs hidden">
+            <p className="absolute -bottom-9 right-1 text-red italic text-xs hidden">
               Password cannot be empty
             </p>
           </label>
