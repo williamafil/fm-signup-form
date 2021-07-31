@@ -5,13 +5,15 @@
 note: files in the public directory are served at the root path.
 Instead of /public/bg-intro-desktop.png, use /bg-intro-desktop.png.
 
+\*\* `background image doesn't show in production`
+
 ```javascript
 extend: {
   backgroundImage: (theme) => ({
     // "pattern-mobile": "url('../public/bg-intro-mobile.png')",
     // "pattern-desktop": "url('../public/bg-intro-desktop.png')",
     "pattern-mobile": "url('./bg-intro-mobile.png')",
-    "pattern-desktop": "url('/bg-intro-desktop.png')",
+    "pattern-desktop": "url('./bg-intro-desktop.png')",
   }),
   colors: {
     blue: {

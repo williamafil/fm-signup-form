@@ -1,14 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 body {
-  /* background-image: url(./assets/images/bg-intro-mobile.png); */
-  @apply bg-red text-white font-poppins bg-pattern-mobile;
+  background-image: url(./assets/images/bg-intro-mobile.png);
+  @apply bg-red text-white font-poppins;
+  /* bg-pattern-mobile */
 }
 
 @media (min-width: 640px) {
   body {
-    /* background-image: url(./assets/images/bg-intro-desktop.png); */
-    @apply bg-pattern-desktop;
+    background-image: url(./assets/images/bg-intro-desktop.png);
+    /* @apply bg-pattern-desktop; */
   }
 }
 

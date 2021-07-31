@@ -827,8 +827,8 @@ module.exports = {
     },
     extend: {
       backgroundImage: (theme) => ({
-        "pattern-mobile": "url('./bg-intro-mobile.png')",
-        "pattern-desktop": "url('./bg-intro-desktop.png')",
+        "pattern-mobile": "url('bg-intro-mobile.png')",
+        "pattern-desktop": "url('bg-intro-desktop.png')",
       }),
       colors: {
         blue: {
