@@ -2,11 +2,16 @@
 
 ## Style Guide (tailwind.config.js theme extend)
 
-```
+note: files in the public directory are served at the root path.
+Instead of /public/bg-intro-desktop.png, use /bg-intro-desktop.png.
+
+```javascript
 extend: {
   backgroundImage: (theme) => ({
-    "pattern-mobile": "url('../public/bg-intro-mobile.png')",
-    "pattern-desktop": "url('../public/bg-intro-desktop.png')",
+    // "pattern-mobile": "url('../public/bg-intro-mobile.png')",
+    // "pattern-desktop": "url('../public/bg-intro-desktop.png')",
+    "pattern-mobile": "url('./bg-intro-mobile.png')",
+    "pattern-desktop": "url('/bg-intro-desktop.png')",
   }),
   colors: {
     blue: {
@@ -44,12 +49,12 @@ Reference: [import.meta.url](https://vitejs.dev/guide/assets.html#new-url-url-im
 
 Setup correct public path
 
-```
+```javascript
 // vite.config.js
 
 export default defineConfig({
-  base: '/REPO_NAME/'
-})
+  base: "/REPO_NAME/",
+});
 ```
 
 Note: base is set to `/` by default
