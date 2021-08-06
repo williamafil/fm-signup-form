@@ -66,9 +66,9 @@ const SignupForm = () => {
               placeholder="First Name"
               onChange={(e) => updateFormData(e)}
             />
-            <p className="absolute -bottom-9 right-1 text-red italic text-xs hidden">
+            <span className="absolute -bottom-9 right-1 text-red italic text-xs hidden">
               First Name cannot be empty
-            </p>
+            </span>
           </label>
         </div>
 
@@ -83,9 +83,9 @@ const SignupForm = () => {
               placeholder="Last Name"
               onChange={(e) => updateFormData(e)}
             />
-            <p className="absolute -bottom-9 right-1 text-red italic text-xs hidden">
+            <span className="absolute -bottom-9 right-1 text-red italic text-xs hidden">
               Last Name cannot be empty
-            </p>
+            </span>
           </label>
         </div>
 
@@ -100,9 +100,9 @@ const SignupForm = () => {
               placeholder="Email Address"
               onChange={(e) => updateFormData(e)}
             />
-            <p className="absolute -bottom-9 right-1 text-red italic text-xs hidden">
+            <span className="absolute -bottom-9 right-1 text-red italic text-xs hidden">
               Looks like this is not an email
-            </p>
+            </span>
           </label>
         </div>
 
@@ -117,9 +117,9 @@ const SignupForm = () => {
               placeholder="Password"
               onChange={(e) => updateFormData(e)}
             />
-            <p className="absolute -bottom-9 right-1 text-red italic text-xs hidden">
+            <span className="absolute -bottom-9 right-1 text-red italic text-xs hidden">
               Password cannot be empty
-            </p>
+            </span>
           </label>
         </div>
 
